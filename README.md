@@ -1,1 +1,1 @@
-# rukiyetunc.githup.io
+# rukiyetunc.github.io
