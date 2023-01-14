@@ -13,7 +13,9 @@
             <div id="ornament">
                 <div id="BG1">
                     <div id="navbar">
-                        <div id="logo"><img src="../Project/Logo.png" alt="error"></div>
+                        <div id="logo"></div>
+                        
+
                         <div id="nav-menu">
                             <button class="button-1">About</button>
                             <button class="button-2">How it work</button>
@@ -21,11 +23,12 @@
                             <button class="button-4">Solution</button>
                             <button class="button-5">Features</button>
                         </div>
+      
 
                         <div id="nav-btn-wrapper">
                             <button class="button-6">Login</button>
-                            <button class="Register">Register new</button>
-
+                            <button class="Register">Register</button>
+                            
                             <div id="hero-content-wrapper">
                                 <h1 class="h-1">Minimize your tabs.</h1>
                                 <h1 class="h-2">Find the trends!</h1>
@@ -47,6 +50,213 @@
                 </div>
             </div>
         </div>
+        
+<!--HAMBURGER MENU-->
+
+        <style>
+          /* Theming */
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"); /* import font */
+        
+        :root{
+            --white: #ffffff;
+            --black: #000000;
+            --gray: #000000;
+        } /* variables*/
+        
+        /* Reset */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: var(--white);
+            font-family: "Poppins", sans-serif;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        a :hover{
+            background-color: #45EDA1;
+            color: rgb(92, 165, 40);
+        }
+
+        li :hover{
+            background-color:#45EDA1;
+            color: aqua;
+        }
+
+        ul{
+            list-style: none;
+        }
+        
+        
+        /* Header */
+        .header{
+            background-color: var(--black);
+            box-shadow: 1px 1px 5px 0px var(--gray);
+            position: absolute;
+            left: 283px;
+            top: 0;
+            width: 90px;
+        }
+
+        
+        /* Logo */
+        .logo{
+            display: inline-block;
+            color: var(--black);
+            font-size: 60px;
+            margin-left: 10px;
+        }
+        
+        /* Nav menu */
+        .nav{
+            width: 375px;
+            height: 638px;
+            position:relative;
+            background-color: var(--black);
+            overflow:hidden;
+            left: -282px;
+
+            flex-direction: column;
+            text-align: center;
+            padding: 0px;
+        }
+
+        .menu a{
+            display: block;
+            padding: 30px;
+            color: var(--white);
+        }
+        .menu a:hover{
+            background-color: var(--gray);
+            color: #45EDA1;
+        }
+        .nav{
+            max-height: 0;
+            transition: max-height .5s ease-out;
+        }
+        
+        /* Menu Icon */
+        .hamb{
+            cursor: pointer;
+            float: right;
+            padding: 40px 20px;
+        }/* Style label tag */
+        
+        .hamb-line {
+            background: var(--white);
+            display: block;
+            height: 2px;
+            position: relative;
+            width: 24px;
+        
+        } /* Style span tag */
+        
+        .hamb-line::before,
+        .hamb-line::after{
+            background: var(--white);
+            content: '';
+            display: block;
+            height: 100%;
+            position: absolute;
+            transition: all .2s ease-out;
+            width: 100%;
+        }
+        .hamb-line::before{
+            top: 5px;
+        }
+        .hamb-line::after{
+            top: -5px;
+        }
+        
+        .side-menu {
+            display: none;
+        } /* Hide checkbox */
+        
+        /* Toggle menu icon */
+        .side-menu:checked ~ nav{
+            max-height: 100%;
+        }
+        .side-menu:checked ~ .hamb .hamb-line {
+            background: transparent;
+        }
+        .side-menu:checked ~ .hamb .hamb-line::before {
+            transform: rotate(-45deg);
+            top:0;
+        }
+        .side-menu:checked ~ .hamb .hamb-line::after {
+            transform: rotate(45deg);
+            top:0;
+        }
+        
+        /* Responsiveness */
+        @media (min-width: 768px) {
+            .nav{
+                max-height: none;
+                top: 0;
+                position: relative;
+                float: right;
+                width: fit-content;
+                background-color: transparent;
+            }
+            .menu li{
+                float: left;
+            }
+            .menu a:hover{
+                background-color: transparent;
+                color: var(--gray);
+        
+            }
+        
+            .hamb{
+                display: none;
+            }
+        }
+        </style>
+        
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!-- App title -->
+            <title>Responsive Pure CSS Menu</title>
+            <!-- Link CSS file -->
+            <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+            <!-- Navigation bar -->
+            <header class="header">
+                <!-- Logo -->
+                <a href="#" class="logo">.</a>
+                <!-- Hamburger icon -->
+                <input class="side-menu" type="checkbox" id="side-menu"/>
+                <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+                <!-- Menu -->
+                <nav class="nav">
+                    <ul class="menu">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">How it work</a> </li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Solution</a></li>
+                        <li><a href="#">Features</a> </li>
+                        <li><a href="#">Login</a></li>
+                        <li class="rgs"><a class="text-rgs" href="#">Register</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <!-- Main content -->
+            <main>
+                <article>
+                    
+                   
+                </article>
+            </main>
+        </body>
+        </html>
+    
 
         <div id="Open-New-Tab-Section"></div>
         <div id="container"></div>
@@ -67,37 +277,52 @@
                fulfill your daily browsing needs.
              </h1>
         </div>
+        
+            <h1 class="findtrend-header">Findtrend make +1000 Startup grow</h1>
+            <img class="brands-1" src="../Project/1.png" alt="">
+            <img class="brands-2" src="../Project/2.png" alt="">
+            <img class="brands-3" src="../Project/3.png" alt="">
+            <img class="brands-4" src="../Project/4.png" alt="">
+            <img class="brands-5" src="../Project/5.png" alt="">
+            <img class="brands-6" src="../Project/6.png" alt="">
+            <img class="brands-7" src="../Project/7.png" alt="">
+            <img class="brands-8" src="../Project/8.png" alt="">
+            <img class="brands-9" src="../Project/9.png" alt="">           
+            <img class="brands-10" src="../Project/10.png" alt="">
+            <img class="brands-11" src="../Project/11.png" alt="">
+            <img class="brands-12" src="../Project/12.png" alt="">
+            <img class="brands-13" src="../Project/13.png" alt="">
+            <img class="brands-14" src="../Project/14.png" alt="">
+            <img class="brands-15" src="../Project/15.png" alt="">
+            <img class="brands-16" src="../Project/16.png" alt="">
+            
 
-        <div id="brands">
-            <img src="../Project/Partner Section.png" alt="">
-        </div>
-       
         <div id="BG4"></div>
         <h1 class="top-header">All platform connect to Findtrend</h1>
         <div id="platform">
             <button class="buttons">
-                <img src="../Project/Group 33.png" alt="error">
+                <img src="../Project/Group 33.png" width="90%" alt="error">
             </button>
             <button class="buttons">
-                <img src="../Project/Group 34.png" alt="error">
+                <img src="../Project/Group 34.png" width="90%" alt="error">
             </button>
             <button class="buttons">
-                <img src="../Project/Group 35.png" alt="error">
+                <img src="../Project/Group 35.png" width="90%" alt="error">
             </button>
             <button class="buttons">
-                <img src="../Project/Group 36.png" alt="error">
+                <img src="../Project/Group 36.png" width="90%" alt="error">
             </button>
             <button class="buttons">
-                <img src="../Project/Group 37.png" alt="error">
+                <img src="../Project/Group 37.png" width="90%" alt="error">
             </button>
             <button class="buttons">
-                <img src="../Project/Group 38.png" alt="error">
+                <img src="../Project/Group 38.png" width="90%" alt="error">
             </button>
             <button class="buttons">
-                <img src="../Project/Group 39.png" alt="error">
+                <img src="../Project/Group 39.png" width="90%" alt="error">
             </button>
             <button class="buttons">
-                <img src="../Project/Group 40.png" alt="error">
+                <img src="../Project/Group 40.png" width="90%" alt="error">
             </button>
         </div>
 
