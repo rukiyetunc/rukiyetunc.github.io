@@ -77,16 +77,6 @@
 
 }
 
-#logo{
-    /* Logo */
-
-    position: absolute;
-    width: 170px;
-    height: 41px;
-    left: 0px;
-    top: 29px;
-
-}
 
 #nav-menu{
     /* Nav-menu */
@@ -2400,6 +2390,14 @@ a:hover{
 
 
 @media screen and (min-width: 480px){
+body {
+    min-height: 100vh;
+    max-width: -10%;
+    background-color: papayawhip; 
+    margin: 0 auto;
+}
+
+
     .header2{
         display: none;
         
@@ -2528,6 +2526,17 @@ a:hover{
     top: 190px;
     }
 
+    .arrow-text{
+        display: none;
+        left: 0;
+        width: 0;
+    }
+
+    #arrow{
+        display: none;
+        left: 0;
+        width: 0;
+    }
     
   }
 
