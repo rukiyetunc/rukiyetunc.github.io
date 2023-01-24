@@ -1,4 +1,4 @@
-        /* Theming */
+         /* Theming */
         @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"); /* import font */
         
         :root{
@@ -2559,7 +2559,7 @@ a:hover{
         }
 
         body{
-            padding:0;
+            padding: 0;
         }
 }
 
@@ -2619,13 +2619,12 @@ a:hover{
     #logo{
    
         position: fixed;
-        width: 750px;
+        width: 75px;
         height: 82px;
         left: 0px;
         top: 0px;
         
         background-image: url(/rukiyetunc.github.io/Project/Frame\ 30\ \(2\).png);
-        background-repeat:no-repeat;
     }
 
     #hero-content-wrapper{
