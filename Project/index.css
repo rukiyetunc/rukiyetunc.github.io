@@ -1,18 +1,166 @@
-*{
-    padding: 0;
-    margin: 0;
-}
+        /* Theming */
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"); /* import font */
+        
+        :root{
+            --white: #ffffff;
+            --black: #000000;
+            --gray: #000000;
+        } /* variables*/
+        
+        /* Reset */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: var(--white);
+            font-family: "Poppins", sans-serif;
+            
+        }
+        a{
+            text-decoration: none;
+        }
 
-html{
-    padding: 0;
-    margin: 0;
+        a :hover{
+            background-color: #45EDA1;
+            color: rgb(92, 165, 40);
+        }
 
-}
+        li :hover{
+            background-color:#45EDA1;
+            color: aqua;
+        }
 
-body{
-    padding: 0;
-    margin: 0;
-}
+        ul{
+            list-style: none;
+        }
+        
+        
+        /* Header */
+        .header2{
+            background-color:rgb(0, 0, 0);
+            box-shadow: 1px 1px 5px 0px var(--gray);
+            position: fixed;
+            left: 75px;
+            top: 0;
+            width: 300px;
+        }
+
+        
+        /* Logo */
+        .logo2{
+            display: none;
+            color: var(--black);
+            font-size: 60px;
+            margin-left: 10px;
+        }
+        
+        /* Nav menu */
+        .nav{
+            
+            height: 100%;
+            width: 375px;
+            position:fixed;
+            background-color: var(--black);
+            overflow:hidden;
+            left: 0;
+            top: 70px;
+            flex-direction: column;
+            text-align: center;
+            padding: 0px;
+        }
+
+        .menu a{
+            display: block;
+            padding: 30px;
+            color: var(--white);
+        }
+        .menu a:hover{
+            background-color: var(--gray);
+            color: #45EDA1;
+        }
+        .nav{
+            max-height: 0;
+            transition: max-height .5s ease-out;
+        }
+        
+        /* Menu Icon */
+        .hamb{
+            cursor: pointer;
+            float: right;
+            padding: 40px 20px;
+        }/* Style label tag */
+        
+        .hamb-line {
+            background: var(--white);
+            display: block;
+            height: 2px;
+            position: relative;
+            width: 24px;
+        
+        } /* Style span tag */
+        
+        .hamb-line::before,
+        .hamb-line::after{
+            background: var(--white);
+            content: '';
+            display: block;
+            height: 100%;
+            position: absolute;
+            transition: all .2s ease-out;
+            width: 100%;
+        }
+        .hamb-line::before{
+            top: 5px;
+        }
+        .hamb-line::after{
+            top: -5px;
+        }
+        
+        .side-menu {
+            display: none;
+        } /* Hide checkbox */
+        
+        /* Toggle menu icon */
+        .side-menu:checked ~ nav{
+            max-height: 100%;
+        }
+        .side-menu:checked ~ .hamb .hamb-line {
+            background: transparent;
+        }
+        .side-menu:checked ~ .hamb .hamb-line::before {
+            transform: rotate(-45deg);
+            top:0;
+        }
+        .side-menu:checked ~ .hamb .hamb-line::after {
+            transform: rotate(45deg);
+            top:0;
+        }
+        
+        /* Responsiveness */
+        @media (min-width: 768px) {
+            .nav{
+                max-height: none;
+                top: 0;
+                position: relative;
+                float: right;
+                width: fit-content;
+                background-color: transparent;
+            }
+            .menu li{
+                float: left;
+            }
+            .menu a:hover{
+                background-color: transparent;
+                color: var(--gray);
+        
+            }
+        
+            .hamb{
+                display: none;
+            }
+        }
 
 
 #findtrend{
@@ -270,7 +418,7 @@ button:hover{
     left: 1067px;
     top: 31px;
 
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgb(0, 0, 0);
 }
 
 .button-6{
@@ -349,12 +497,12 @@ button:hover{
 
 
     position: absolute;
-    width: 700px;
-    height: 337.63px;
-    left: -740px;
-    top: 198px;
-    background-color: rgba(0, 0, 0, 0);
+    width: 213px;
+    height: 42px;
+    left: 1067px;
+    top: 31px;
 
+    background-color: rgb(0, 0, 0);
 }
 
 .h-1{
@@ -364,8 +512,8 @@ button:hover{
     position: absolute;
     width: 700px;
     height: 81px;
-    left: 0px;
-    top: -50px;
+    left: -795px;
+    top: 180px;
 
     font-family: 'Effra';
     font-style: normal;
@@ -387,8 +535,8 @@ button:hover{
     position: absolute;
     width: 700px;
     height: 81px;
-    left: 0px;
-    top: 30px;
+    left: -800px;
+    top: 260px;
 
     font-family: 'Effra';
     font-style: normal;
@@ -409,8 +557,8 @@ button:hover{
     position: absolute;
     width: 666px;
     height: 54px;
-    left: 15px;
-    top: 150px;
+    left: -770px;
+    top: 360px;
 
     font-family: 'Effra';
     font-style: normal;
@@ -432,8 +580,8 @@ button:hover{
     position: absolute;
     width: 93px;
     height: 28px;
-    left: 444.93px;
-    top: 240px;
+    left: -330px;
+    top: 455px;
 
     font-family: 'GoodDog New';
     font-style: normal;
@@ -454,8 +602,8 @@ button:hover{
     position: absolute;
     width: 28.39px;
     height: 34.45px;
-    left: 449.52px;
-    top: 300px;
+    left: -350.52px;
+    top: 475px;
 
     transform: rotate(-2.94deg);
 }
@@ -497,8 +645,8 @@ button:hover{
     position: absolute;
     width: 187px;
     height: 57px;
-    left: 250px;
-    top: 280px;
+    left: -550px;
+    top: 455px;
 
     background: #A8FF35;
     border-radius: 40px;
@@ -1199,7 +1347,7 @@ background-color: #00000000;
     width: 104px;
     height: 52px;
     left: 679px;
-    top: 5720px;
+    top: 5705px;
   }
   
   .switch input { 
@@ -1312,7 +1460,7 @@ background-color: #00000000;
 
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 36px;
     line-height: 100%;
     /* identical to box height, or 36px */
@@ -1334,7 +1482,7 @@ background-color: #00000000;
 
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
     /* identical to box height, or 18px */
@@ -1365,11 +1513,11 @@ background-color: #00000000;
     width: 70px;
     height: 64px;
     left: 172px;
-    top: 5925px;
+    top: 5957px;
 
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 64px;
     line-height: 100%;
     /* identical to box height, or 64px */
@@ -1389,7 +1537,7 @@ background-color: #00000000;
 
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
     /* identical to box height, or 18px */
@@ -1408,7 +1556,7 @@ background-color: #00000000;
     width: 24px;
     height: 24px;
     left: 172px;
-    top: 6060px;
+    top: 6050px;
 
 }
 
@@ -1423,7 +1571,7 @@ background-color: #00000000;
 
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
     /* identical to box height, or 18px */
@@ -1441,7 +1589,7 @@ background-color: #00000000;
     width: 24px;
     height: 24px;
     left: 172px;
-    top: 6108px;
+    top: 6097px;
 
 
 }
@@ -1457,7 +1605,7 @@ background-color: #00000000;
 
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
     /* identical to box height, or 18px */
@@ -1473,7 +1621,7 @@ background-color: #00000000;
     width: 24px;
     height: 24px;
     left: 172px;
-    top: 6156px;
+    top: 6144px;
 }
 
 .personal-text-4{
@@ -1487,7 +1635,7 @@ background-color: #00000000;
 
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
     /* identical to box height, or 18px */
@@ -1546,7 +1694,7 @@ background-color: #00000000;
 
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 36px;
     line-height: 100%;
     /* identical to box height, or 36px */
@@ -1569,7 +1717,7 @@ background-color: #00000000;
 
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
     /* identical to box height, or 18px */
@@ -1597,11 +1745,11 @@ background-color: #00000000;
     width: 105px;
     height: 64px;
     left: 584px;
-    top: 5925px;
+    top: 5955px;
 
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 64px;
     line-height: 100%;
     /* identical to box height, or 64px */
@@ -1621,7 +1769,7 @@ background-color: #00000000;
 
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
     /* identical to box height, or 18px */
@@ -1638,7 +1786,7 @@ background-color: #00000000;
     width: 24px;
     height: 24px;
     left: 584px;
-    top: 6060px;
+    top: 6050px;
 
  }
  
@@ -1654,7 +1802,7 @@ background-color: #00000000;
 
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
     /* identical to box height, or 18px */
@@ -1673,7 +1821,7 @@ background-color: #00000000;
     width: 24px;
     height: 24px;
     left: 584px;
-    top: 6108px;
+    top: 6098px;
 }
 
 .regular-text-2{
@@ -1688,7 +1836,7 @@ background-color: #00000000;
 
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
     /* identical to box height, or 18px */
@@ -1705,7 +1853,7 @@ background-color: #00000000;
     width: 24px;
     height: 24px;
     left: 584px;
-    top: 6156px;
+    top: 6144px;
 }
 
 .regular-text-3{
@@ -1719,7 +1867,7 @@ background-color: #00000000;
 
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
     /* identical to box height, or 18px */
@@ -1736,7 +1884,7 @@ background-color: #00000000;
     width: 24px;
     height: 24px;
     left: 584px;
-    top: 6203px;
+    top: 6193px;
 
 }
 
@@ -1751,7 +1899,7 @@ background-color: #00000000;
 
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
     /* identical to box height, or 18px */
@@ -1810,7 +1958,7 @@ background-color: #00000000;
 
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 36px;
     line-height: 100%;
     /* identical to box height, or 36px */
@@ -1831,7 +1979,7 @@ background-color: #00000000;
 
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
     /* identical to box height, or 18px */
@@ -1860,11 +2008,11 @@ background-color: #00000000;
     width: 105px;
     height: 64px;
     left: 972px;
-    top: 5919px;
+    top: 5949px;
 
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 64px;
     line-height: 100%;
     /* identical to box height, or 64px */
@@ -1884,7 +2032,7 @@ background-color: #00000000;
 
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
     /* identical to box height, or 18px */
@@ -1900,7 +2048,7 @@ background-color: #00000000;
     width: 24px;
     height: 24px;
     left: 972px;
-    top: 6060px;
+    top: 6050px;
 }
 
 .premium-text{
@@ -1914,7 +2062,7 @@ background-color: #00000000;
 
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
     /* identical to box height, or 18px */
@@ -1931,7 +2079,7 @@ background-color: #00000000;
     width: 24px;
     height: 24px;
     left: 972px;
-    top: 6108px;
+    top: 6096px;
 
 }
 
@@ -1939,14 +2087,14 @@ background-color: #00000000;
     /* Unlimited download page */
     
     position: absolute;
-    width: 196px;
+    width: 200px;
     height: 18px;
     left: 1004px;
     top: 6100px;
 
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
     /* identical to box height, or 18px */
@@ -1962,7 +2110,7 @@ background-color: #00000000;
     width: 24px;
     height: 24px;
     left: 972px;
-    top: 6155px;
+    top: 6145px;
 
 }
 
@@ -1970,14 +2118,14 @@ background-color: #00000000;
    /* Unlimited page each group */
 
     position: absolute;
-    width: 207px;
+    width: 213px;
     height: 18px;
     left: 1004px;
     top: 6148px;
 
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
     /* identical to box height, or 18px */
@@ -1994,7 +2142,7 @@ background-color: #00000000;
     width: 24px;
     height: 24px;
     left: 972px;
-    top: 6203px;
+    top: 6193px;
 }
 
 .premium-text-4{
@@ -2008,7 +2156,7 @@ background-color: #00000000;
 
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
     /* identical to box height, or 18px */
@@ -2024,7 +2172,7 @@ background-color: #00000000;
     width: 24px;
     height: 24px;
     left: 972px;
-    top: 6252px;
+    top: 6240px;
 }
 
 .premium-text-5{
@@ -2038,7 +2186,7 @@ background-color: #00000000;
 
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
     /* identical to box height, or 18px */
@@ -2053,7 +2201,7 @@ background-color: #00000000;
     width: 24px;
     height: 24px;
     left: 972px;
-    top: 6300px;
+    top: 6288px;
 
 }
 
@@ -2068,7 +2216,7 @@ background-color: #00000000;
 
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: px;
     font-size: 18px;
     line-height: 100%;
     /* identical to box height, or 18px */
@@ -2392,7 +2540,7 @@ a:hover{
         position: absolute;
         width: 170px;
         height: 41px;
-        left: 0px;
+        left: 50px;
         top: 29px;
         
         background-image: url(../Project/Logo.png);
@@ -2409,9 +2557,16 @@ a:hover{
     .header2{
         display: none;
         }
+
+        body{
+            padding:0;
+        }
 }
 
 @media screen and (max-width: 480px){
+    body{
+        padding:0;
+    }
    
     #ornament {
         width: 0;
@@ -2424,12 +2579,6 @@ a:hover{
     footer{
         width: 375px;
     }
-
-    #nav-btn-wrapper{
-        width: 0;
-    }
-
-   
 
     .header{
         display: block;
@@ -2469,13 +2618,13 @@ a:hover{
 
     #logo{
    
-        position: absolute;
-        width: 70px;
-        height: 41px;
-        left: -60px;
-        top: 25px;
+        position: fixed;
+        width: 750px;
+        height: 82px;
+        left: 0px;
+        top: 0px;
         
-        background-image: url(/rukiyetunc.github.io/Project/Vector.png);
+        background-image: url(/rukiyetunc.github.io/Project/Frame\ 30\ \(2\).png);
         background-repeat:no-repeat;
     }
 
@@ -2483,7 +2632,7 @@ a:hover{
         position: absolute;
         width: 300px;
         height: 290px;
-        left: -1100px;
+        left: -40px;
         top: 198px;
         background-color: rgba(120, 30, 30, 0);  
     }
@@ -2524,7 +2673,7 @@ a:hover{
     position: absolute;
     width: 270px;
     height: 84px;
-    left: px;
+    left: 15px;
     top: 62px;
 
     font-family: 'Effra';
@@ -2928,8 +3077,6 @@ top: 2450px;
         height: 64px;
         left: 0px;
         top: 3356px;
-               
-
 
         max-height: 120px;
         border: 0px;
@@ -3023,7 +3170,7 @@ top: 2450px;
 
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 900;
+    font-weight: 900px;
     font-size: 36px;
     line-height: 43px;
     /* identical to box height */
@@ -3036,11 +3183,11 @@ top: 2450px;
     width: 71px;
     height: 22px;
     left: 50px;
-    top: 4400px;
+    top: 4415px;
 
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 500px;
     font-size: 18px;
     line-height: 22px;
    }
@@ -3050,11 +3197,11 @@ top: 2450px;
     width: 54px;
     height: 22px;
     left: 260px;
-    top: 4400px;
+    top: 4415px;
 
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 500px;
     font-size: 18px;
     line-height: 22px;
    }
@@ -3063,9 +3210,10 @@ top: 2450px;
     position: absolute;
     width: 63.37px;
     height: 66.27px;
-    left: 240px;
-    top: 4471px;
-    transform: rotate(15deg);
+    left: 230px;
+    top: 4447px;
+    
+    transform: rotate(30deg);
    }
 
    .switch{
@@ -3191,6 +3339,23 @@ footer{
     top: 6970px;
 }
 
+
+.Privacy{
+    width: 130px;  
+}
+
+.Terms{
+  width: 230px;  
+}
+
+.Contact{
+  width: 130px;  
+}
+
+.Careers{
+  width: 130px;  
+}
+
 /*PERSONAL*/
 
 
@@ -3203,21 +3368,21 @@ footer{
     
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 32px;
     line-height: 100%;
 }
 
 .personal-text{
     position: absolute;
-    width: 192px;
+    width: 200px;
     height: 18px;
     left: 48px;
     top: 4602px;
     
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
 }
@@ -3237,11 +3402,11 @@ footer{
     width: 66px;
     height: 60px;
     left: 48px;
-    top: 4655px;
+    top: 4682px;
     
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 60px;
     line-height: 100%;
 }
@@ -3255,7 +3420,7 @@ footer{
     
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
 }
@@ -3266,7 +3431,7 @@ footer{
     width: 24px;
     height: 24px;
     left: 47px;
-    top: 4780px;    
+    top: 4772px;    
 }
 
 .personal-text-2{
@@ -3278,7 +3443,7 @@ footer{
     
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
 }
@@ -3288,7 +3453,7 @@ footer{
     width: 24px;
     height: 24px;
     left: 47px;
-    top: 4830px;    
+    top: 4820px;    
 }
 
 .personal-text-3{
@@ -3300,7 +3465,7 @@ footer{
     
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
 }
@@ -3310,7 +3475,7 @@ footer{
     width: 24px;
     height: 24px;
     left: 47px;
-    top: 4880px;    
+    top: 4868px;    
 }
 
 .personal-text-4{
@@ -3322,7 +3487,7 @@ footer{
     
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
 }
@@ -3346,7 +3511,7 @@ footer{
 
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 32px;
     line-height: 100%;
 }
@@ -3360,7 +3525,7 @@ footer{
     
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
 }
@@ -3380,11 +3545,11 @@ footer{
     width: 99px;
     height: 60px;
     left: 48px;
-    top: 5278px;
+    top: 5307px;
     
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 60px;
     line-height: 100%;
 }
@@ -3398,7 +3563,7 @@ footer{
 
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
 }
@@ -3408,7 +3573,7 @@ footer{
     width: 24px;
     height: 24px;
     left: 47px;
-    top: 5403px;
+    top: 5395px;
 }
 
 .regular-text{
@@ -3420,7 +3585,7 @@ footer{
     
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
 }
@@ -3430,7 +3595,7 @@ footer{
     width: 24px;
     height: 24px;
     left: 47px;
-    top: 5450px;
+    top: 5438px;
 }
 
 .regular-text-2{
@@ -3442,7 +3607,7 @@ footer{
     
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
 }
@@ -3452,7 +3617,7 @@ footer{
     width: 24px;
     height: 24px;
     left: 47px;
-    top: 5496px;
+    top: 5485px;
 }
 
 .regular-text-3{
@@ -3464,7 +3629,7 @@ footer{
     
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
 }
@@ -3474,7 +3639,7 @@ footer{
     width: 24px;
     height: 24px;
     left: 47px;
-    top: 5540px;    
+    top: 5528px;    
 }
 
 .regular-text-4{
@@ -3486,7 +3651,7 @@ footer{
     
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
 }
@@ -3510,21 +3675,21 @@ footer{
     
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 32px;
     line-height: 100%;
     }
      
     .premium-text-1{
         position: absolute;
-        width: 232px;
+        width: 242px;
         height: 18px;
         left: 48px;
         top: 5845px;
         
         font-family: 'Effra';
         font-style: normal;
-        font-weight: 400;
+        font-weight: 400px;
         font-size: 18px;
         line-height: 100%;
     }
@@ -3542,11 +3707,11 @@ footer{
     width: 99px;
     height: 60px;
     left: 48px;
-    top: 5898px;
+    top: 5928px;
 
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 60px;
     line-height: 100%;
     }
@@ -3560,7 +3725,7 @@ footer{
         
         font-family: 'Effra';
         font-style: normal;
-        font-weight: 400;
+        font-weight: 400px;
         font-size: 18px;
         line-height: 100%;
     }
@@ -3570,7 +3735,7 @@ footer{
     width: 24px;
     height: 24px;
     left: 47px;
-    top: 6020px;
+    top: 6010px;
 }
 
 .premium-text{
@@ -3582,7 +3747,7 @@ footer{
     
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
 }
@@ -3593,19 +3758,19 @@ footer{
     width: 24px;
     height: 24px;
     left: 47px;
-    top: 6067px;
+    top: 6057px;
 }
 
 .premium-text-2{
     position: absolute;
-    width: 196px;
+    width: 200px;
     height: 18px;
     left: 79px;
     top: 6060px;
 
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
 }
@@ -3615,20 +3780,20 @@ footer{
     width: 24px;
     height: 24px;
     left: 47px;
-    top: 6112px;
+    top: 6100px;
 }
 
 .premium-text-3{
 
     position: absolute;
-    width: 207px;
+    width: 217px;
     height: 18px;
     left: 79px;
     top: 6104px;
     
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
 }
@@ -3638,19 +3803,19 @@ footer{
     width: 24px;
     height: 24px;
     left: 47px;
-    top: 6156px;
+    top: 6145px;
 }
 
 .premium-text-4{
     position: absolute;
-    width: 227px;
+    width: 240px;
     height: 18px;
     left: 79px;
     top: 6148px;
     
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
 }
@@ -3660,7 +3825,7 @@ footer{
     width: 24px;
     height: 24px;
     left: 47px;
-    top: 6200px;
+    top: 6189px;
 }
 
 .premium-text-5{
@@ -3672,7 +3837,7 @@ footer{
     
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
 }
@@ -3682,7 +3847,7 @@ footer{
     width: 24px;
     height: 24px;
     left: 47px;
-    top: 6248px;
+    top: 6236px;
 }
 
 .premium-text-6{
@@ -3694,7 +3859,7 @@ footer{
     
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
 }
@@ -3705,7 +3870,7 @@ footer{
     width: 278px;
     height: 54px;
     left: 48px;
-    top: 6292px;    
+    top: 6292px;  
 }
 }
 
@@ -3718,6 +3883,23 @@ footer{
 }
 
 @media screen and (max-width: 375px){
+
+    #ornament {
+        width: 0;
+     }
+
+    #navbar{
+        width: 0;
+    }
+
+    footer{
+        width: 375px;
+    }
+
+    #nav-btn-wrapper{
+    }
+
+
     .header{
         display: block;
 
@@ -3756,13 +3938,13 @@ footer{
 
     #logo{
    
-        position: absolute;
-        width: 70px;
-        height: 41px;
-        left: -60px;
-        top: 25px;
+         position: fixed;
+        width: 750px;
+        height: 82px;
+        left: 0px;
+        top: 0px;
         
-        background-image: url(/rukiyetunc.github.io/Project/Vector.png);
+        background-image: url(/rukiyetunc.github.io/Project/Frame\ 30\ \(2\).png);
         background-repeat:no-repeat;
     }
 
@@ -3770,7 +3952,7 @@ footer{
         position: absolute;
         width: 300px;
         height: 290px;
-        left: -1100px;
+        left: -40px;
         top: 198px;
         background-color: rgba(120, 30, 30, 0);  
     }
@@ -4312,7 +4494,7 @@ top: 2450px;
     width: 71px;
     height: 22px;
     left: 50px;
-    top: 4480px;
+    top: 4400px;
 
     font-family: 'Inter';
     font-style: normal;
@@ -4340,8 +4522,8 @@ top: 2450px;
     width: 63.37px;
     height: 66.27px;
     left: 240px;
-    top: 4471px;
-    transform: rotate(15deg);
+    top: 4430px;
+    transform: rotate(25deg);
    }
 
    .switch{
@@ -4349,7 +4531,7 @@ top: 2450px;
     width: 104px;
     height: 44px;
     left: 136px;
-    top: 4405px;
+    top: 4390px;
     border-radius: 34px;
 }
 
@@ -4465,6 +4647,24 @@ footer{
     height: 192px;
     left: 103px;
     top: 6970px;
+
+    
+}
+
+.Privacy{
+      width: 130px;  
+}
+
+.Terms{
+    width: 230px;  
+}
+
+.Contact{
+    width: 130px;  
+}
+
+.Careers{
+    width: 130px;  
 }
 
 /*PERSONAL*/
@@ -4479,7 +4679,7 @@ footer{
     
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 32px;
     line-height: 100%;
 }
@@ -4493,7 +4693,7 @@ footer{
     
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
 }
@@ -4513,11 +4713,11 @@ footer{
     width: 66px;
     height: 60px;
     left: 48px;
-    top: 4655px;
+    top: 4682px;
     
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 60px;
     line-height: 100%;
 }
@@ -4531,7 +4731,7 @@ footer{
     
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
 }
@@ -4542,7 +4742,7 @@ footer{
     width: 24px;
     height: 24px;
     left: 47px;
-    top: 4780px;    
+    top: 4770px;    
 }
 
 .personal-text-2{
@@ -4554,7 +4754,7 @@ footer{
     
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
 }
@@ -4564,7 +4764,7 @@ footer{
     width: 24px;
     height: 24px;
     left: 47px;
-    top: 4830px;    
+    top: 4820px;    
 }
 
 .personal-text-3{
@@ -4576,7 +4776,7 @@ footer{
     
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
 }
@@ -4586,7 +4786,7 @@ footer{
     width: 24px;
     height: 24px;
     left: 47px;
-    top: 4880px;    
+    top: 4870px;    
 }
 
 .personal-text-4{
@@ -4598,7 +4798,7 @@ footer{
     
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
 }
@@ -4622,7 +4822,7 @@ footer{
 
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 32px;
     line-height: 100%;
 }
@@ -4636,7 +4836,7 @@ footer{
     
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
 }
@@ -4656,11 +4856,11 @@ footer{
     width: 99px;
     height: 60px;
     left: 48px;
-    top: 5278px;
+    top: 5306px;
     
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 60px;
     line-height: 100%;
 }
@@ -4674,7 +4874,7 @@ footer{
 
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
 }
@@ -4684,7 +4884,7 @@ footer{
     width: 24px;
     height: 24px;
     left: 47px;
-    top: 5403px;
+    top: 5393px;
 }
 
 .regular-text{
@@ -4696,7 +4896,7 @@ footer{
     
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
 }
@@ -4706,7 +4906,7 @@ footer{
     width: 24px;
     height: 24px;
     left: 47px;
-    top: 5450px;
+    top: 5438px;
 }
 
 .regular-text-2{
@@ -4718,7 +4918,7 @@ footer{
     
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
 }
@@ -4728,7 +4928,7 @@ footer{
     width: 24px;
     height: 24px;
     left: 47px;
-    top: 5496px;
+    top: 5484px;
 }
 
 .regular-text-3{
@@ -4740,7 +4940,7 @@ footer{
     
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
 }
@@ -4750,7 +4950,7 @@ footer{
     width: 24px;
     height: 24px;
     left: 47px;
-    top: 5540px;    
+    top: 5528px;    
 }
 
 .regular-text-4{
@@ -4762,7 +4962,7 @@ footer{
     
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
 }
@@ -4786,7 +4986,7 @@ footer{
     
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 32px;
     line-height: 100%;
     }
@@ -4800,7 +5000,7 @@ footer{
         
         font-family: 'Effra';
         font-style: normal;
-        font-weight: 400;
+        font-weight: 400px;
         font-size: 18px;
         line-height: 100%;
     }
@@ -4818,11 +5018,11 @@ footer{
     width: 99px;
     height: 60px;
     left: 48px;
-    top: 5898px;
+    top: 5928px;
 
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 60px;
     line-height: 100%;
     }
@@ -4836,7 +5036,7 @@ footer{
         
         font-family: 'Effra';
         font-style: normal;
-        font-weight: 400;
+        font-weight: 400px;
         font-size: 18px;
         line-height: 100%;
     }
@@ -4846,7 +5046,7 @@ footer{
     width: 24px;
     height: 24px;
     left: 47px;
-    top: 6020px;
+    top: 6010px;
 }
 
 .premium-text{
@@ -4858,7 +5058,7 @@ footer{
     
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
 }
@@ -4869,19 +5069,19 @@ footer{
     width: 24px;
     height: 24px;
     left: 47px;
-    top: 6067px;
+    top: 6058px;
 }
 
 .premium-text-2{
     position: absolute;
-    width: 196px;
+    width: 200px;
     height: 18px;
     left: 79px;
     top: 6060px;
 
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
 }
@@ -4891,20 +5091,20 @@ footer{
     width: 24px;
     height: 24px;
     left: 47px;
-    top: 6112px;
+    top: 6102px;
 }
 
 .premium-text-3{
 
     position: absolute;
-    width: 207px;
+    width: 237px;
     height: 18px;
     left: 79px;
     top: 6104px;
     
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
 }
@@ -4914,19 +5114,19 @@ footer{
     width: 24px;
     height: 24px;
     left: 47px;
-    top: 6156px;
+    top: 6146px;
 }
 
 .premium-text-4{
     position: absolute;
-    width: 227px;
+    width: 247px;
     height: 18px;
     left: 79px;
     top: 6148px;
     
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
 }
@@ -4936,7 +5136,7 @@ footer{
     width: 24px;
     height: 24px;
     left: 47px;
-    top: 6200px;
+    top: 6190px;
 }
 
 .premium-text-5{
@@ -4948,7 +5148,7 @@ footer{
     
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
 }
@@ -4958,7 +5158,7 @@ footer{
     width: 24px;
     height: 24px;
     left: 47px;
-    top: 6248px;
+    top: 6238px;
 }
 
 .premium-text-6{
@@ -4970,7 +5170,7 @@ footer{
     
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 100%;
 }
