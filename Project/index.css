@@ -2626,7 +2626,7 @@ a:hover{
         position: fixed;
         width: 75px;
         height: 82px;
-        left: 8px;
+        left: 11px;
         top: 0px;
 
         background-image: url(../Project/Frame\ 30\ \(2\).png);
@@ -2635,8 +2635,8 @@ a:hover{
     }
 
     body{
-        margin-left: 8px;
-        margin-right: 8px;
+        margin-left: 11px;
+        margin-right: 11px;
     } 
 
     .nav{
@@ -2646,7 +2646,7 @@ a:hover{
         position:fixed;
         background-color: var(--black);
         overflow:hidden;
-        left: 8px;
+        left: 11px;
         top: 81px;
         flex-direction: column;
         text-align: center;
@@ -2657,7 +2657,7 @@ a:hover{
         background-color:rgb(0, 0, 0);
         box-shadow: 1px 1px 5px 0px var(--gray);
         position: fixed;
-        left: 82px;
+        left: 85px;
         top: 0;
         width: 300px;
     }
@@ -3395,7 +3395,7 @@ footer{
 
 .Personal-header{
     position: absolute;
-    width: 121px;
+    width: 151px;
     height: 32px;
     left: 48px;
     top: 4550px;
@@ -3470,7 +3470,7 @@ footer{
 
 .personal-text-2{
     position: absolute;
-    width: 187px;
+    width: 257px;
     height: 18px;
     left: 79px;
     top: 4772px;
@@ -3492,7 +3492,7 @@ footer{
 
 .personal-text-3{
     position: absolute;
-    width: 156px;
+    width: 256px;
     height: 18px;
     left: 79px;
     top: 4822px;
@@ -3514,7 +3514,7 @@ footer{
 
 .personal-text-4{
     position: absolute;
-    width: 192px;
+    width: 292px;
     height: 18px;
     left: 79px;
     top: 4872px;
@@ -3552,7 +3552,7 @@ footer{
 
 .regular-text-1{
     position: absolute;
-    width: 244px;
+    width: 284px;
     height: 18px;
     left: 48px;
     top: 5227px;
@@ -3612,7 +3612,7 @@ footer{
 
 .regular-text{
     position: absolute;
-    width: 197px;
+    width: 297px;
     height: 18px;
     left: 79px;
     top: 5396px;
@@ -3656,7 +3656,7 @@ footer{
 
 .regular-text-3{
     position: absolute;
-    width: 156px;
+    width: 286px;
     height: 18px;
     left: 79px;
     top: 5487px;
@@ -3678,7 +3678,7 @@ footer{
 
 .regular-text-4{
     position: absolute;
-    width: 202px;
+    width: 282px;
     height: 18px;
     left: 79px;
     top: 5532px;
@@ -3716,7 +3716,7 @@ footer{
      
     .premium-text-1{
         position: absolute;
-        width: 242px;
+        width: 292px;
         height: 18px;
         left: 48px;
         top: 5845px;
@@ -3774,7 +3774,7 @@ footer{
 
 .premium-text{
     position: absolute;
-    width: 175px;
+    width: 275px;
     height: 18px;
     left: 79px;
     top: 6012px;
@@ -3797,7 +3797,7 @@ footer{
 
 .premium-text-2{
     position: absolute;
-    width: 200px;
+    width: 280px;
     height: 18px;
     left: 79px;
     top: 6060px;
@@ -3820,7 +3820,7 @@ footer{
 .premium-text-3{
 
     position: absolute;
-    width: 217px;
+    width: 297px;
     height: 18px;
     left: 79px;
     top: 6104px;
@@ -3842,7 +3842,7 @@ footer{
 
 .premium-text-4{
     position: absolute;
-    width: 240px;
+    width: 290px;
     height: 18px;
     left: 79px;
     top: 6148px;
@@ -3864,7 +3864,7 @@ footer{
 
 .premium-text-5{
     position: absolute;
-    width: 227px;
+    width: 297px;
     height: 18px;
     left: 79px;
     top: 6192px;
@@ -3886,7 +3886,7 @@ footer{
 
 .premium-text-6{
     position: absolute;
-    width: 227px;
+    width: 297px;
     height: 18px;
     left: 79px;
     top: 6240px;
