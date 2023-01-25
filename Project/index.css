@@ -1,4 +1,9 @@
-         /* Theming */
+        body{
+            margin-left: 50px;
+            margin-right: 50px;
+        } 
+        
+        /* Theming */
         @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"); /* import font */
         
         :root{
@@ -39,10 +44,10 @@
         
         /* Header */
         .header2{
-            background-color:rgb(0, 0, 0);
+            background-color:rgb(38, 102, 140);
             box-shadow: 1px 1px 5px 0px var(--gray);
             position: fixed;
-            left: 74px;
+            left: 124px;
             top: 0;
             width: 300px;
         }
@@ -2621,13 +2626,18 @@ a:hover{
         position: fixed;
         width: 75px;
         height: 82px;
-        left: 0px;
+        left: 50px;
         top: 0px;
 
         background-image: url(../Project/Frame\ 30\ \(2\).png);
         background-repeat:no-repeat;
         
     }
+
+    body{
+        margin-left: 50px;
+        margin-right: 50px;
+    } 
 
     #hero-content-wrapper{
         position: absolute;
@@ -3939,13 +3949,17 @@ footer{
         position: fixed;
         width: 75px;
         height: 82px;
-        left: 0px;
+        left: 50px;
         top: 0px;
 
         background-image: url(../Project/Frame\ 30\ \(2\).png);
         background-repeat:no-repeat;
        
     }
+    body{
+        margin-left: 0px;
+        margin-right: 0px;
+    } 
 
     #hero-content-wrapper{
         position: absolute;
