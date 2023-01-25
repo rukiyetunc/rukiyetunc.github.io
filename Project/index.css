@@ -42,9 +42,9 @@
             background-color:rgb(0, 0, 0);
             box-shadow: 1px 1px 5px 0px var(--gray);
             position: fixed;
-            left: 50px;
+            left: 74px;
             top: 0;
-            width: 325px;
+            width: 300px;
         }
 
         
@@ -2623,6 +2623,9 @@ a:hover{
         height: 82px;
         left: 0px;
         top: 0px;
+
+        background-image: url(../Project/Frame\ 30\ \(2\).png);
+        background-repeat:no-repeat;
         
     }
 
@@ -3938,6 +3941,9 @@ footer{
         height: 82px;
         left: 0px;
         top: 0px;
+
+        background-image: url(../Project/Frame\ 30\ \(2\).png);
+        background-repeat:no-repeat;
        
     }
 
