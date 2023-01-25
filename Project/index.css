@@ -45,6 +45,9 @@
             left: 0px;
             top: 0;
             width: 375px;
+
+            background-image: url(/rukiyetunc.github.io/Project/Frame\ 30\ \(2\).png);
+            background-repeat:no-repeat;
         }
 
         
@@ -3943,8 +3946,7 @@ footer{
         left: 12px;
         top: 15px;
         
-        background-image: url(/rukiyetunc.github.io/Project/Vector.png);
-        background-repeat:no-repeat;
+       
     }
 
     #hero-content-wrapper{
