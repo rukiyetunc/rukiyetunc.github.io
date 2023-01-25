@@ -2626,7 +2626,7 @@ a:hover{
         position: fixed;
         width: 75px;
         height: 82px;
-        left: 0px;
+        left: 25px;
         top: 0px;
 
         background-image: url(../Project/Frame\ 30\ \(2\).png);
@@ -2635,8 +2635,8 @@ a:hover{
     }
 
     body{
-        margin-left: 0px;
-        margin-right: 0px;
+        margin-left: 25px;
+        margin-right: 25px;
     } 
 
     .nav{
@@ -2646,18 +2646,18 @@ a:hover{
         position:fixed;
         background-color: var(--black);
         overflow:hidden;
-        left: 0px;
-        top: 70px;
+        left: 25px;
+        top: 81px;
         flex-direction: column;
         text-align: center;
         padding: 0px;
     }
 
     .header2{
-        background-color:rgb(114, 14, 14);
+        background-color:rgb(0, 0, 0);
         box-shadow: 1px 1px 5px 0px var(--gray);
         position: fixed;
-        left: 75px;
+        left: 99px;
         top: 0;
         width: 300px;
     }
@@ -3985,10 +3985,10 @@ footer{
     } 
 
     .header2{
-        background-color:rgb(140, 38, 108);
+        background-color:rgb(0, 0, 0);
         box-shadow: 1px 1px 5px 0px var(--gray);
         position: fixed;
-        left: 75px;
+        left: 74px;
         top: 0;
         width: 300px;
     }
@@ -4001,7 +4001,7 @@ footer{
         background-color: var(--black);
         overflow:hidden;
         left: 0px;
-        top: 70px;
+        top: 81px;
         flex-direction: column;
         text-align: center;
         padding: 0px;
