@@ -39,15 +39,12 @@
         
         /* Header */
         .header2{
-            background-color:rgb(32, 35, 183);
+            background-color:rgb(0, 0, 0);
             box-shadow: 1px 1px 5px 0px var(--gray);
             position: fixed;
-            left: 0px;
+            left: 50px;
             top: 0;
-            width: 375px;
-
-            background-image: url(/rukiyetunc.github.io/Project/Vector.png);
-            background-repeat:no-repeat;
+            width: 325px;
         }
 
         
@@ -2536,19 +2533,19 @@ a:hover{
     top: 0px;
     border-radius: nullpx;
 }
-
-@media screen and (max-width: 2000px){
-    #logo{
+#logo{
    
-        position: absolute;
-        width: 170px;
-        height: 41px;
-        left: 50px;
-        top: 29px;
-        
-        background-image: url(../Project/Logo.png);
-        background-repeat:no-repeat;
-    }
+    position: absolute;
+    width: 170px;
+    height: 41px;
+    left: 50px;
+    top: 29px;
+    
+    background-image: url(../Project/Logo.png);
+    background-repeat:no-repeat;
+}
+@media screen and (max-width: 2000px){
+   
 }
 
 
@@ -2627,7 +2624,6 @@ a:hover{
         left: 0px;
         top: 0px;
         
-        background-image: url(/rukiyetunc.github.io/Project/Frame\ 30\ \(2\).png);
     }
 
     #hero-content-wrapper{
@@ -3898,9 +3894,6 @@ footer{
         width: 375px;
     }
 
-    #nav-btn-wrapper{
-    }
-
 
     .header{
         display: block;
@@ -3938,7 +3931,15 @@ footer{
         top: 0px;
         }
 
+    #logo{
    
+        position: fixed;
+        width: 75px;
+        height: 82px;
+        left: 0px;
+        top: 0px;
+       
+    }
 
     #hero-content-wrapper{
         position: absolute;
@@ -4881,7 +4882,7 @@ footer{
 
 .regular-text{
     position: absolute;
-    width: 220ppx;
+    width: 250ppx;
     height: 18px;
     left: 79px;
     top: 5396px;
@@ -5043,7 +5044,7 @@ footer{
 
 .premium-text{
     position: absolute;
-    width: 220ppx;
+    width: 250ppx;
     height: 18px;
     left: 79px;
     top: 6012px;
@@ -5066,7 +5067,7 @@ footer{
 
 .premium-text-2{
     position: absolute;
-    width: 250px;
+    width: 280px;
     height: 18px;
     left: 79px;
     top: 6060px;
@@ -5089,7 +5090,7 @@ footer{
 .premium-text-3{
 
     position: absolute;
-    width: 250px;
+    width: 280px;
     height: 18px;
     left: 79px;
     top: 6104px;
@@ -5111,7 +5112,7 @@ footer{
 
 .premium-text-4{
     position: absolute;
-    width: 267px;
+    width: 277px;
     height: 18px;
     left: 79px;
     top: 6148px;
@@ -5133,7 +5134,7 @@ footer{
 
 .premium-text-5{
     position: absolute;
-    width: 250px;
+    width: 270px;
     height: 18px;
     left: 79px;
     top: 6192px;
@@ -5155,7 +5156,7 @@ footer{
 
 .premium-text-6{
     position: absolute;
-    width: 257px;
+    width: 287px;
     height: 18px;
     left: 79px;
     top: 6240px;
