@@ -39,12 +39,12 @@
         
         /* Header */
         .header2{
-            background-color:rgb(0, 0, 0);
+            background-color:rgb(161, 36, 36);
             box-shadow: 1px 1px 5px 0px var(--gray);
             position: fixed;
-            left: 75px;
+            left: 0px;
             top: 0;
-            width: 300px;
+            width: 375px;
         }
 
         
@@ -3937,13 +3937,13 @@ footer{
 
     #logo{
    
-         position: fixed;
-        width: 750px;
+        position: fixed;
+        width: 75px;
         height: 82px;
-        left: 0px;
-        top: 0px;
+        left: 12px;
+        top: 15px;
         
-        background-image: url(/rukiyetunc.github.io/Project/Frame\ 30\ \(2\).png);
+        background-image: url(/rukiyetunc.github.io/Project/Vector.png);
         background-repeat:no-repeat;
     }
 
