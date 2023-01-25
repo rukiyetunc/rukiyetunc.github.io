@@ -39,14 +39,14 @@
         
         /* Header */
         .header2{
-            background-color:rgb(32, 183, 32);
+            background-color:rgb(32, 35, 183);
             box-shadow: 1px 1px 5px 0px var(--gray);
             position: fixed;
             left: 0px;
             top: 0;
             width: 375px;
 
-            background-image: url(/rukiyetunc.github.io/Project/Frame\ 30\ \(2\).png);
+            background-image: url(/rukiyetunc.github.io/Project/Vector.png);
             background-repeat:no-repeat;
         }
 
@@ -3938,16 +3938,7 @@ footer{
         top: 0px;
         }
 
-    #logo{
    
-        position: fixed;
-        width: 75px;
-        height: 82px;
-        left: 12px;
-        top: 15px;
-        
-       
-    }
 
     #hero-content-wrapper{
         position: absolute;
