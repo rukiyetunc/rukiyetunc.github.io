@@ -2626,7 +2626,7 @@ a:hover{
         position: fixed;
         width: 75px;
         height: 82px;
-        left: 50px;
+        left: 0px;
         top: 0px;
 
         background-image: url(../Project/Frame\ 30\ \(2\).png);
@@ -2635,9 +2635,32 @@ a:hover{
     }
 
     body{
-        margin-left: 50px;
-        margin-right: 50px;
+        margin-left: 0px;
+        margin-right: 0px;
     } 
+
+    .nav{
+            
+        height: 100%;
+        width: 375px;
+        position:fixed;
+        background-color: var(--black);
+        overflow:hidden;
+        left: 0px;
+        top: 70px;
+        flex-direction: column;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .header2{
+        background-color:rgb(114, 14, 14);
+        box-shadow: 1px 1px 5px 0px var(--gray);
+        position: fixed;
+        left: 75px;
+        top: 0;
+        width: 300px;
+    }
 
     #hero-content-wrapper{
         position: absolute;
@@ -3949,7 +3972,7 @@ footer{
         position: fixed;
         width: 75px;
         height: 82px;
-        left: 50px;
+        left: 0px;
         top: 0px;
 
         background-image: url(../Project/Frame\ 30\ \(2\).png);
@@ -3960,6 +3983,29 @@ footer{
         margin-left: 0px;
         margin-right: 0px;
     } 
+
+    .header2{
+        background-color:rgb(140, 38, 108);
+        box-shadow: 1px 1px 5px 0px var(--gray);
+        position: fixed;
+        left: 75px;
+        top: 0;
+        width: 300px;
+    }
+
+    .nav{
+            
+        height: 100%;
+        width: 375px;
+        position:fixed;
+        background-color: var(--black);
+        overflow:hidden;
+        left: 0px;
+        top: 70px;
+        flex-direction: column;
+        text-align: center;
+        padding: 0px;
+    }
 
     #hero-content-wrapper{
         position: absolute;
