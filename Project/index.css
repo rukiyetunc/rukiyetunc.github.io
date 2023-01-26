@@ -2549,16 +2549,11 @@ a:hover{
     background-image: url(../Project/Logo.png);
     background-repeat:no-repeat;
 }
-@media screen and (max-width: 2000px){
-   
-}
-
-
 
 /* NEW SCREEN SIZE SETTING*/
 
 
-@media screen and (min-width: 480px){
+@media screen and (min-width: 401px){
     .header2{
         display: none;
         }
@@ -2568,7 +2563,7 @@ a:hover{
         }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 400px){
     body{
         padding:0;
     }
@@ -2599,7 +2594,7 @@ a:hover{
     }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 400px){
     #findtrend{
     position: relative;
     width: 375px;
@@ -2751,7 +2746,7 @@ a:hover{
 
   /*mini images*/
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 400px){
     .in-grup-1{
     position: absolute;
     width: 299.41px;
@@ -2799,7 +2794,7 @@ a:hover{
     }
   }
 
-  @media screen and (max-width: 480px){
+  @media screen and (max-width: 400px){
     #Open-New-Tab-Section{
     position: absolute;
     width: 375px;
@@ -2919,7 +2914,7 @@ a:hover{
     }
   }
 
-  @media screen and (max-width: 480px){
+  @media screen and (max-width: 400px){
     .top-header{
     position: absolute;
     width: 339px;
@@ -2962,7 +2957,7 @@ a:hover{
   }
 
   /*BRANDS*/
-  @media screen and (max-width: 480px){
+  @media screen and (max-width: 400px){
   .brands-1{
     position: absolute;
     width: 162px;
@@ -3098,7 +3093,7 @@ top: 2450px;
 }
 
 /*SECTION BG4 */
-@media screen and (max-width: 480px){
+@media screen and (max-width: 400px){
     #platform{
         display: flex;
         flex-direction: row;
@@ -3186,7 +3181,7 @@ top: 2450px;
 }
 
 /*SECTION BG5 */
-@media screen and (max-width: 480px){
+@media screen and (max-width: 400px){
    #BG5{
     position: absolute;
     width: 375px;
@@ -3290,7 +3285,7 @@ top: 2450px;
 }
 
 /*SECTION BG6 */
-@media screen and (max-width: 480px){
+@media screen and (max-width: 400px){
     #BG6{
         position: absolute;
         width: 375px;
@@ -3409,7 +3404,7 @@ footer{
 
 .personal-text{
     position: absolute;
-    width: 200px;
+    width: 250px;
     height: 18px;
     left: 48px;
     top: 4602px;
@@ -3634,7 +3629,7 @@ footer{
 
 .regular-text-2{
     position: absolute;
-    width: 228px;
+    width: 258px;
     height: 18px;
     left: 79px;
     top: 5442px;
