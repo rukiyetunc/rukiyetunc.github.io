@@ -2553,7 +2553,7 @@ a:hover{
 /* NEW SCREEN SIZE SETTING*/
 
 
-@media screen and (min-width: 450px){
+@media screen and (min-width: 445px){
     .header2{
         display: none;
         }
@@ -2563,7 +2563,7 @@ a:hover{
         }
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 445px){
     body{
         padding:0;
     }
@@ -2594,7 +2594,7 @@ a:hover{
     }
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 445px){
     #findtrend{
     position: relative;
     width: 375px;
@@ -2746,7 +2746,7 @@ a:hover{
 
   /*mini images*/
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 445px){
     .in-grup-1{
     position: absolute;
     width: 299.41px;
@@ -2794,7 +2794,7 @@ a:hover{
     }
   }
 
-  @media screen and (max-width: 450px){
+  @media screen and (max-width: 445px){
     #Open-New-Tab-Section{
     position: absolute;
     width: 375px;
@@ -2914,7 +2914,7 @@ a:hover{
     }
   }
 
-  @media screen and (max-width: 450px){
+  @media screen and (max-width: 445px){
     .top-header{
     position: absolute;
     width: 339px;
@@ -2957,7 +2957,7 @@ a:hover{
   }
 
   /*BRANDS*/
-  @media screen and (max-width: 450px){
+  @media screen and (max-width: 445px){
   .brands-1{
     position: absolute;
     width: 162px;
@@ -3093,7 +3093,7 @@ top: 2450px;
 }
 
 /*SECTION BG4 */
-@media screen and (max-width: 450px){
+@media screen and (max-width: 445px){
     #platform{
         display: flex;
         flex-direction: row;
@@ -3181,7 +3181,7 @@ top: 2450px;
 }
 
 /*SECTION BG5 */
-@media screen and (max-width: 450px){
+@media screen and (max-width: 445px){
    #BG5{
     position: absolute;
     width: 375px;
@@ -3285,7 +3285,7 @@ top: 2450px;
 }
 
 /*SECTION BG6 */
-@media screen and (max-width: 450px){
+@media screen and (max-width: 445px){
     #BG6{
         position: absolute;
         width: 375px;
