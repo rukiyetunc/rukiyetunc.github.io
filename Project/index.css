@@ -250,8 +250,20 @@ body{
     top: 0px;
     background-color: rgba(0, 0, 0, 0);
 
+
+
 }
 
+@keyframes nav-text {
+
+    0%{
+        transform: translateY(100%);
+    }
+    
+    100%{
+        transform: translateY(0);
+    }
+}
 
 #nav-menu{
     /* Nav-menu */
@@ -270,6 +282,9 @@ body{
     height: 18px;
     left: 396px;
     top: 40px;
+
+    animation: nav-load 800ms ease-in;
+
 
 }
 
@@ -455,6 +470,8 @@ button:hover{
     color: #ffffff;
     border: 0;
 
+    animation: nav-load 800ms ease-in;
+
 
 }
 .Register{
@@ -499,6 +516,7 @@ button:hover{
 
     background: #FFFFFF;
     border-radius: 40px;
+    animation: nav-load 800ms ease-in;
 
 }
 
@@ -537,6 +555,9 @@ button:hover{
 
     color: #FFFFFF;
 
+    animation: nav-text 800ms ease-in;
+
+
 }
 
 .h-2{
@@ -559,6 +580,7 @@ button:hover{
     text-align: center;
 
     color: #FFFFFF;
+    animation: nav-text 800ms ease-in;
 
 
 }
@@ -581,6 +603,7 @@ button:hover{
     text-align: center;
 
     color: #8B8B8B;
+    animation: nav-text 800ms ease-in;
  
 }
 
@@ -604,6 +627,7 @@ button:hover{
     color: #FFFFFF;
 
     transform: rotate(6deg);
+    animation: nav-text 800ms ease-in;
 
 }
 
@@ -617,6 +641,9 @@ button:hover{
     top: 475px;
 
     transform: rotate(-2.94deg);
+
+    animation: nav-text 800ms ease-in;
+
 }
 
 
@@ -661,6 +688,8 @@ button:hover{
 
     background: #A8FF35;
     border-radius: 40px;
+    animation: nav-text 800ms ease-in;
+
 }
 
 #get-started:hover{
@@ -708,6 +737,7 @@ background-color: #00000000;
 
     background-image:url('../Project/Group\ 9.png');
     background-repeat: no-repeat;
+    animation: nav-text 800ms ease-in;
 
         
 }
@@ -729,6 +759,9 @@ background-color: #00000000;
  
      background-image:url('../Project/Group\ 10.png');
      background-repeat: no-repeat;
+
+    animation: nav-text 800ms ease-in;
+
  }
         
  .in-grup-3{
@@ -746,6 +779,7 @@ background-color: #00000000;
  
      background-image:url('../Project/Group\ 8.png');
      background-repeat: no-repeat;
+     animation: nav-text 800ms ease-in;
 
  }
 
@@ -765,6 +799,7 @@ background-color: #00000000;
  
      background-image:url('../Project/Group\ 7.png');
      background-repeat: no-repeat;
+     animation: nav-text 800ms ease-in;
 
  }
 
@@ -1163,7 +1198,7 @@ background-color: #00000000;
 }
 
 .start-free-trial-1:hover{
-    background-color: #000000;
+    background-color: #45EDA1;
     color: #000000;
 }
 
@@ -2556,7 +2591,31 @@ a:hover{
     
     background-image: url(../Project/Logo.png);
     background-repeat:no-repeat;
+
+    animation: nav-load 800ms ease-in;
+
 }
+
+@keyframes nav-load {
+
+    0%{
+        transform: scale(0);
+    }
+    
+   90%{
+        transform: scale(1.1);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 800px){
+    
+
+}
+
 
 /* NEW SCREEN SIZE SETTING*/
 
@@ -2635,11 +2694,15 @@ a:hover{
         background-image: url(../Project/Frame\ 30\ \(2\).png);
         background-repeat:no-repeat;
         
+        animation: nav-load 400ms ease-in;
+
     }
 
     body{
         margin-left: 17.5px;
         margin-right: 17.5px;
+
+        
     } 
 
     .nav{
@@ -2654,6 +2717,7 @@ a:hover{
         flex-direction: column;
         text-align: center;
         padding: 0px;
+
     }
 
     .header2{
@@ -2688,6 +2752,9 @@ a:hover{
     /* or 40px */
 
     text-align: center;
+
+    animation: nav-load 800ms ease-in;
+
     }
 
     .h-2{
@@ -2705,6 +2772,9 @@ a:hover{
     /* or 40px */
 
     text-align: center;
+
+    animation: nav-load 800ms ease-in;
+
     }
 
     .text{
@@ -2722,6 +2792,7 @@ a:hover{
     /* or 21px */
 
     text-align: center
+
     }
 
     #get-started{
@@ -2737,6 +2808,9 @@ a:hover{
     height: 44px;
     left: 65px;
     top: 190px;
+
+    animation: nav-load 800ms ease-in;
+
     }
 
     .arrow-text{
@@ -2764,6 +2838,7 @@ a:hover{
     top: 572px;
 
     transform: rotate(-4deg);
+
     }
 
     .in-grup-2{
@@ -2832,6 +2907,7 @@ a:hover{
     /* or 40px */
 
     text-align: center;
+    
     }
 
     .box-white{
@@ -3270,7 +3346,7 @@ top: 2450px;
   .slider:before{
     height: 37px;
     width: 37px;
-    bottom: 3px;
+    bottom: 3.5px;
     
   }
   
@@ -3923,6 +3999,9 @@ footer{
     width: 300px;
     height: 82px;
     background-color: rgb(0, 0, 0);
+
+ animation: nav-load 400ms ease-in;
+
 }
 
 .hamburger{
@@ -3936,8 +4015,7 @@ footer{
     font-size: 50px;
 
 
-    max-height: 0;
-    transition: max-height .5s ease-out;
+    
 }
 
 .icon-hamburger{
@@ -3945,6 +4023,22 @@ footer{
     padding-top:0px;
     color: white;
     font-size: 55px;
+
+    animation: nav-load 800ms ease-in;
+
+
+
+}
+
+@keyframes nav-load {
+
+    0%{
+        transform: translateY(100%);
+    }
+    
+    100%{
+        transform: translateY(0);
+    }
 }
 
 .icon-hamburger:hover{
@@ -3955,8 +4049,9 @@ footer{
 .nav-bar{
     background-color: #000000;
     width: 375px;
-    height: 667px;
+    height: 760px;
     overflow: hidden;
+
 }
 
 .btn-menu{
@@ -3975,6 +4070,26 @@ li{
     padding-top: 20px;
     color: white;
     font-size: 18px;
+
+    animation: nav-menu 400ms ease-in;
+
+
+
+}
+
+@keyframes nav-menu {
+
+    0%{
+        transform: scale(0);
+    }
+    
+   90%{
+        transform: scale(1.1);
+    }
+
+    100%{
+        transform: scale(1);
+    }
 }
 
 .btn-font:hover{
@@ -4007,7 +4122,13 @@ li{
 
     max-height: 0;
     transition: max-height 2ms ease-out;
+
+    animation: nav-load 300ms ease-in;
+
+
+
 }
+
 
 .btn-close:hover{
     background-color: #000000;

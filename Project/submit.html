@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Findtrend Submit</title>
+
+    <style>
+        body{
+            background-color: black;
+
+        }
+        
+        input[type=text], select {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+        
+        input[type=email], select {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+
+        input[type=password], select {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+
+        input[type=submit] {
+          width: 100%;
+          background-color: #000000;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+          background-color: #45EDA1;
+          color: #000000;
+        }
+        
+        div {
+          border-radius: 5px;
+          background-color: #a7ff35;
+          padding: 20px;
+          margin-top: 150px;
+
+          animation: nav-load 800ms ease-in;
+
+
+
+        }
+
+        @keyframes nav-load {
+
+            0%{
+                transform: scale(0);
+            }
+            
+           90%{
+                transform: scale(1.1);
+            }
+
+            100%{
+                transform: scale(1);
+            }
+        }
+
+        
+@media screen and (min-width: 800px){
+    div{
+      margin: auto;
+      margin-top: 10%;
+      width: 700px;
+    }
+
+  }
+
+        </style>
+    
+</head>
+<body>
+
+    <div>
+        <form action="index.html">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="lname">Email</label>
+          <input type="email" id="lname" name="email" placeholder="example@gmail.com">
+
+          <label for="lname">Password</label>
+          <input type="password" id="lname" name="password" placeholder="Password">
+
+          </select>
+        
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    
+</body>
+</html>
