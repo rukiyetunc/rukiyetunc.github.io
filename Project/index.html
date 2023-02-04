@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Findtrend</title>
     <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+
 </head>
 <body>
+    
     <div id="findtrend">
         <div id="hero-section">
             <div id="ornament">
@@ -16,11 +19,27 @@
                         
 
                         <div id="nav-menu">
+                        
+                        <form action="#longtext">
                             <button class="button-1">About</button>
+                        </form>
+                       
+                        <form action="#BG1">
                             <button class="button-2">How it work</button>
+                        </form>
+                        
+                        <form action="#BG5">
                             <button class="button-3">Pricing</button>
+                        </form>
+                        
+                        <form action="#Open-New-Tab-Section">
                             <button class="button-4">Solution</button>
+                        </form>
+                        
+                        <form action="#BG4">
                             <button class="button-5">Features</button>
+                        </form>
+
                         </div>
       
 
@@ -28,7 +47,11 @@
                          <form action="login.html">           
                             <button class="button-6">Login</button>
                         </form> 
+
+                        <form action="submit.html">  
                             <button class="Register">Register</button>
+
+                        </form> 
                             
                                 <h1 class="h-1">Minimize your tabs.</h1>
                                 <h1 class="h-2">Find the trends!</h1>
@@ -52,7 +75,6 @@
     
 
         <div id="Open-New-Tab-Section"></div>
-        <div id="container"></div>
         <h1 id="header">Open new tabs is sh*t</h1>   
         <div class="box-white"></div>
         <div id="findtrend-image"><img src="../Project/Group 15.png" alt="error"></div>
@@ -126,9 +148,9 @@
 
         <div id="BG5"></div>
         <h1 id="Getyourbestdeal">Get your best deal</h1>
-        <h2 class="Monthly">Monthly</h2>
+        <h2 class="Monthly">Monthly price</h2>
         
-            <label class="switch">
+            <label class="switch" onchange="theDolar()">
                 <input type="checkbox">
                 <span class="slider round"></span>
             </label>
@@ -220,7 +242,7 @@
         <div class="footer-down">
             <a class="Privacy" href="#">Privacy Policy</a>
             <a class="Terms" href="#">Terms and Conditions</a>
-            <a class="Contact" href="#">Contact Us</a>
+            <a class="Contact" href="#BG6">Contact Us</a>
             <a class="Careers" href="#">Careers</a>
             
         </div>
@@ -228,7 +250,7 @@
         <div id="logo"></div>
 
        <div class="section-menu">
-            <a href="indexx.html" class="hamburger"><h3 class="icon-hamburger">=</h3></a>
+        <a href="indexx.html" class="hamburger"><h3 class="icon-hamburger">=</h3></a>
        </div>
 
     </div>  
