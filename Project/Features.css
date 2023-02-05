@@ -1,133 +1,40 @@
 body{
-    background-color: #000000;
+    background-color: #fefefe;
     margin: auto;
     
 }
-.nav-bar{
-    position: absolute;
-    background-color: #000000;
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    overflow: hidden;
-}
-
-.btn-menu{
-    background-color: #000000;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-li{
-    text-align: center ;
-    height: 60px;
-    font-size: 18px;
-
-}
-
-ul{
-    padding: 0;
-    margin: 0;
-}
-.btn-font{
-    padding-top: 20px;
-    color: white;
-    font-size: 18px;
-    animation: nav-menu 400ms ease-in;
-}
-
-.btn-font:hover{
-    height: 60px;
-    background-color: #000000;
-    color: #45EDA1;
-}
-
-.btn-font::after{
-    background-color: #000000;
-    color: #000000;
-}
-
-.btn-font::before{
-    background-color: #000000;
-    color: #000000;
-}
-
-.btn-close{
-    position: absolute;
-    left: 328px;
-    top: 10px;
-    padding-top: 0px;
-    margin-top:10px ;
-    font-size: 42px;
-    width: 0px;
-    height: 0px;
-    background-color: rgba(255, 192, 203, 0);
-    color: rgb(255, 255, 255);
-    animation: nav-menu 400ms ease-in;
-}
-
-.btn-close:hover{
-    background-color: #000000;
-    color: #45EDA1;
-}
 
 
-a:hover{
-background-color:rgba(0, 0, 0, 0) ;
-color: #45eda100;
-}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-a{
-    text-decoration: none;
-}
-
-
-@keyframes nav-menu {
-
-    0%{
-        transform: scale(0);
-    }
-    
-   90%{
-        transform: scale(1.1);
-    }
-
-    100%{
-        transform: scale(1);
-    }
-}
-
-
-#BG4{
-    position: absolute;
-    width: 375px;
-    height: 1055px;
-    left: 0px;
-    top: 90px;
-
-    background: #efefef;
-}
 
 .top-header{
-    position: absolute;
-    width: 339px;
-    height: 86px;
-    left: 18px;
-    top: 190px;
+   
 
+    position: relative;
+    width: 100%;
+    height: 86px;
+    top: 10px;
     font-family: 'Effra';
     font-style: normal;
-    font-weight: 900;
+    font-weight: 900px;
     font-size: 36px;
     line-height: 43px;
     text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
     }
 
 
 .findtrend-header{
-    position: absolute;
-    width: 335px;
+    position: fixed;
+    width: 100%;
     height: 86px;
     left: 20px;
     top: 35px;
@@ -146,16 +53,14 @@ a{
     align-items: flex-start;
     padding: 0px;
     gap: 16px;
+    width: 100%;
 
     position: absolute;
-    width: 376px;
     height: 64px;
-    left: 0px;
-    top: 336px;
+    top: 180px;
 
     max-height: 120px;
     border: 0px;
-    display: flex;
     overflow-x: auto;
 }
 
@@ -200,27 +105,24 @@ margin-right: 2px;
 
 
 .tweet-img{
-    position: absolute;
+    position:relative ;
     width: 339px;
     height: 116px;
-    left: 18px;
-    top: 430px;
+    top: 150px;
 }
 
 .tweet-img-2{
-    position: absolute;
+    position:relative;
     width: 339px;
     height: 344px;
-    left: 18px;
-    top: 565px;      
+    top: 175px;      
 }
 
 .tweet-img-3{
-    position: absolute;
+    position:relative;
     width: 339px;
     height: 116px;
-    left: 18px;
-    top: 928px;
+    top: 200px;
 }
 
 #view-more-trend{
@@ -230,17 +132,16 @@ margin-right: 2px;
     align-items: center;
     padding: 12px 24px;
     gap: 10px;
-
+    margin: auto;
       
     flex: none;
     order: 0;
     flex-grow: 0;
 
-    position: absolute;
+    position: relative;
     width: 190px;
     height: 44px;
-    left: 93px;
-    top: 1100px;
+    top: 280px;
     background-color: #000000;
     color: white;
 

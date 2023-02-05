@@ -63,8 +63,8 @@ ul{
 }
 
 .btn-close{
-    position: absolute;
-    left: 328px;
+    position: fixed;
+    right: 50px;
     top: 10px;
     padding-top: 0px;
     margin-top:10px ;
@@ -107,6 +107,3 @@ a{
     }
 }
 
-.bu{
-    background-color: pink;
-}
